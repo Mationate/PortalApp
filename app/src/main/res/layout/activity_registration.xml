@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="#FFFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+    <!--<ImageView
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorTransparentBG"
+        android:padding="10dp">
+
+        <EditText
+            android:drawableEnd="@mipmap/baseline_person_black_24"
+            android:id="@+id/userInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Ingresa tu nombre..."
+            android:textColor="#FFFF"
+            android:textColorHint="#FFFF" />
+
+        <EditText
+            android:drawableEnd="@mipmap/baseline_email_black_24"
+            android:id="@+id/mailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userInput"
+            android:hint="Ingresa tu correo..."
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFF"
+            android:textColorHint="#FFFF" />
+
+        <EditText
+            android:drawableEnd="@mipmap/baseline_lock_black_24"
+            android:id="@+id/passInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mailInput"
+            android:hint="Ingresa tu contraseña..."
+            android:inputType="textPassword"
+            android:textColor="#FFFF"
+            android:textColorHint="#FFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passInput"
+            android:layout_marginTop="20dp"
+            android:text="- Tu contraseña debe tener más de 7 dígitos"
+            android:textColor="#FFFF" />
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/termsCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerBtn"
+        android:background="@color/colorTransparentBG"
+        android:text="Acepto los términos y condiciones"
+        android:textColor="#FFFF"
+        android:textSize="10dp" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/termsCheck"
+        android:background="@color/colorTransparentBG"
+        android:text="Quiero suscribirme al newsletter"
+        android:textColor="#ffff"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:text="registrarme"
+        android:textColor="#FFFF" />
+
+</RelativeLayout>
