@@ -6,48 +6,75 @@
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/dark_grey_texture" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorTransparentBg2" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:orientation="vertical">
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorTransparentBG"
+            android:background="@color/colorTransparentBg1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="Bienvenido al portal !"
+            android:text="Bienvenido a Tattoo portal !"
             android:textColor="#FFFF"
             android:textSize="30dp" />
 
         <TextView
+            android:gravity="center"
             android:id="@+id/secondText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:background="@color/colorTransparentBG"
+            android:background="@color/colorTransparentBg1"
             android:padding="15dp"
-            android:text="Para poder ingresar, pulsa el botón para crear tu cuenta. "
+            android:text="Una red social para tatuadores"
             android:textColor="#FFFF"
             android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/login1Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="Ingresar"
+            android:textColor="#FFFF" />
+
+        <Button
+            android:id="@+id/createAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="Crear Cuenta"
+            android:textColor="#FFFF" />
+
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/createAccountBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
-        android:background="@color/colorAccent"
-        android:text="Crear Cuenta"
-        android:textColor="#FFFF" />
 
 </RelativeLayout>

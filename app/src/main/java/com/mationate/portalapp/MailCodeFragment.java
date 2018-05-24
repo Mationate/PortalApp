@@ -42,7 +42,7 @@ public class MailCodeFragment extends Fragment {
         final Button setCodeBtn = view.findViewById(R.id.toSetCodeBtn);
         final Button myMailBtn = view.findViewById(R.id.myMailBtn);
         final TextView codeAlertText = view.findViewById(R.id.codeAlertText);
-        Button registerBtn = view.findViewById(R.id.registerBtn);
+        final Button registerBtn = view.findViewById(R.id.registerBtn);
 
 
         setCodeBtn.setOnClickListener(new View.OnClickListener() {
@@ -67,9 +67,9 @@ public class MailCodeFragment extends Fragment {
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (codeEt.getText().toString().trim().length()==5){
-                    Toast.makeText(getContext(), "Felicidades, tu cuenta ha sido creada !.", Toast.LENGTH_SHORT).show();
-                }else {
+                if (codeEt.getText().toString().trim().length() == 5) {
+                    Toast.makeText(getContext(), "Felicidades, tu cuenta ha sido creada !", Toast.LENGTH_SHORT).show();
+                } else {
                     Toast.makeText(getContext(), "Tu código es incorrecto.", Toast.LENGTH_SHORT).show();
                 }
             }

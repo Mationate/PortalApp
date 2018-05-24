@@ -1,8 +1,8 @@
 package com.mationate.portalapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,14 +15,26 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Button mainbutton =  findViewById(R.id.createAccountBtn);
-        mainbutton.setOnClickListener(new View.OnClickListener() {
+        Button registerBtn =  findViewById(R.id.createAccountBtn);
+        Button loginBtn = findViewById(R.id.login1Btn);
+
+        registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mainIntent = new Intent(MainActivity.this, RegistrationActivity.class);
-                startActivity(mainIntent);
+                Intent registerIntent = new Intent(MainActivity.this, RegistrationActivity.class);
+                startActivity(registerIntent);
 
     }
 });
+
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(loginIntent);
+            }
+        });
+
         }
+
 }
