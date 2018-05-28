@@ -14,6 +14,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
+
         Button loginBtnFake = findViewById(R.id.loginBtnFake);
         loginBtnFake.setOnClickListener(new View.OnClickListener() {
             @Override
