@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorTransparentBg1"
             android:padding="15dp"
-            android:text="Una red social para tatuadores"
+            android:text="Una plataforma donde podras conocer tatuadores en Chile y cotizar por sus servicios."
             android:textColor="#FFFF"
             android:textSize="15dp" />
 

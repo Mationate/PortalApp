@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         Button registerBtn =  findViewById(R.id.createAccountBtn);
         Button loginBtn = findViewById(R.id.login1Btn);
 
@@ -36,5 +35,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         }
+
+
 
 }
