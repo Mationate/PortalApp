@@ -13,11 +13,12 @@
         android:src="@mipmap/dark_grey_texture" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
         android:scaleType="centerCrop"
+        android:layout_marginTop="40dp"
         android:src="@mipmap/ic_launcher" />
 
 
