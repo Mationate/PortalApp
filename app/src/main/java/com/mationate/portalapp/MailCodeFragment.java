@@ -1,6 +1,7 @@
 package com.mationate.portalapp;
 
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -59,16 +60,18 @@ public class MailCodeFragment extends Fragment {
         myMailBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentMail = new Intent(Intent.ACTION_VIEW);
-                intentMail.setData(Uri.parse("https://www.google.com/gmail/"));
-                startActivity(intentMail);
+                Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("com.google.android.gm");
+                startActivity(intent);
             }
         });
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (codeEt.getText().toString().trim().length() == 5) {
-                    Toast.makeText(getContext(), "Felicidades, tu cuenta ha sido creada !", Toast.LENGTH_SHORT).show();
+                    AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+                    alertDialog.setMessage("Felicidades, tu cuenta ha sido creada");
+                    alertDialog.show();
+                    /*Toast.makeText(getContext(), "Felicidades, tu cuenta ha sido creada !", Toast.LENGTH_SHORT).show();*/
                 } else {
                     Toast.makeText(getContext(), "Tu código es incorrecto.", Toast.LENGTH_SHORT).show();
                 }

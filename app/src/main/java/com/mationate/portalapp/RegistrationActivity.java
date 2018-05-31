@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 public class RegistrationActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,10 @@ public class RegistrationActivity extends AppCompatActivity {
         final EditText userInput = findViewById(R.id.userInput);
         final EditText passInput = findViewById(R.id.passInput);
         final Button registerBtn = findViewById(R.id.registerBtn);
+        EditText mailInput = findViewById(R.id.mailInput);
+
+
+
         final CheckBox termsCheck = findViewById(R.id.termsCheck);
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
